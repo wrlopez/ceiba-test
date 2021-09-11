@@ -20,8 +20,8 @@ class ViewModel: BaseViewModelProtocol {
     let output: Output
     var error: PublishSubject<String> = PublishSubject()
     
-    private var originalUserList: [UserCellViewModel]
-    private let userListSubject = BehaviorRelay<[UserCellViewModel]>(value: [])
+    var originalUserList: [UserCellViewModel]
+    let userListSubject = BehaviorRelay<[UserCellViewModel]>(value: [])
     private let isAnimatingSubject = PublishSubject<Bool>()
     
     init() {

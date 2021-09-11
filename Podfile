@@ -4,9 +4,14 @@
 target 'ceiba' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for ceiba
-    pod 'RxSwift', '~> 5'
-    pod 'RxCocoa', '~> 5'
-
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
+  
+  target 'ceibaTests' do
+    pod 'RxTest'
+    pod 'RxBlocking'
+  end
 end
+

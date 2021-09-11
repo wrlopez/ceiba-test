@@ -53,3 +53,9 @@ class UserCellViewModel: BaseViewModelProtocol {
         return user?.name ?? ""
     }
 }
+
+extension UserCellViewModel: Equatable {
+    static func == (lhs: UserCellViewModel, rhs: UserCellViewModel) -> Bool {
+        return lhs.getUserId() == rhs.getUserId()
+    }
+}
