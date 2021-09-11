@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,23 @@
 		3DEA1FAF26EC3C5C00F5912F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA1FAD26EC3C5C00F5912F /* Main.storyboard */; };
 		3DEA1FB126EC3C5D00F5912F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA1FB026EC3C5D00F5912F /* Assets.xcassets */; };
 		3DEA1FB426EC3C5D00F5912F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA1FB226EC3C5D00F5912F /* LaunchScreen.storyboard */; };
+		3DEA1FC026EC469C00F5912F /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA1FBF26EC469C00F5912F /* UserTableViewCell.swift */; };
+		3DEA1FC226EC486D00F5912F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA1FC126EC486D00F5912F /* User.swift */; };
+		3DEA1FC426EC4A7600F5912F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA1FC326EC4A7600F5912F /* ViewModel.swift */; };
+		3DEA1FC726EC4B7400F5912F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA1FC626EC4B7400F5912F /* Constants.swift */; };
+		3DEA1FC926EC4BCB00F5912F /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA1FC826EC4BCB00F5912F /* Protocols.swift */; };
+		3DEA1FCB26EC4D4600F5912F /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA1FCA26EC4D4600F5912F /* UserViewModel.swift */; };
+		3DEA1FCD26EC58A500F5912F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA1FCC26EC58A500F5912F /* Post.swift */; };
+		3DEA1FD126EC6C1700F5912F /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA1FD026EC6C1700F5912F /* ServiceProtocol.swift */; };
+		3DEA1FD326EC6DC800F5912F /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA1FD226EC6DC800F5912F /* NetworkError.swift */; };
+		3DEA1FD526ECF7C000F5912F /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA1FD426ECF7C000F5912F /* NetworkProvider.swift */; };
+		3DEA1FD826ED08D700F5912F /* Encodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA1FD726ED08D600F5912F /* Encodable+Extensions.swift */; };
+		3DEA1FDB26ED0CB300F5912F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA1FDA26ED0CB300F5912F /* UserService.swift */; };
+		85E61E9FB234312D704CFF43 /* Pods_ceiba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1655A13D5DDA87BC3E83E3D5 /* Pods_ceiba.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1655A13D5DDA87BC3E83E3D5 /* Pods_ceiba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ceiba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DEA1FA426EC3C5C00F5912F /* ceiba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ceiba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DEA1FA726EC3C5C00F5912F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DEA1FA926EC3C5C00F5912F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +38,20 @@
 		3DEA1FB026EC3C5D00F5912F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DEA1FB326EC3C5D00F5912F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DEA1FB526EC3C5D00F5912F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DEA1FBF26EC469C00F5912F /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		3DEA1FC126EC486D00F5912F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3DEA1FC326EC4A7600F5912F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		3DEA1FC626EC4B7400F5912F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3DEA1FC826EC4BCB00F5912F /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		3DEA1FCA26EC4D4600F5912F /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		3DEA1FCC26EC58A500F5912F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		3DEA1FD026EC6C1700F5912F /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		3DEA1FD226EC6DC800F5912F /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		3DEA1FD426ECF7C000F5912F /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		3DEA1FD726ED08D600F5912F /* Encodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extensions.swift"; sourceTree = "<group>"; };
+		3DEA1FDA26ED0CB300F5912F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		4F3BE7C8E7F52D2FBC9C53DF /* Pods-ceiba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ceiba.debug.xcconfig"; path = "Target Support Files/Pods-ceiba/Pods-ceiba.debug.xcconfig"; sourceTree = "<group>"; };
+		EB06F334892408E7D446EEEE /* Pods-ceiba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ceiba.release.xcconfig"; path = "Target Support Files/Pods-ceiba/Pods-ceiba.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85E61E9FB234312D704CFF43 /* Pods_ceiba.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +71,8 @@
 			children = (
 				3DEA1FA626EC3C5C00F5912F /* ceiba */,
 				3DEA1FA526EC3C5C00F5912F /* Products */,
+				CCE4BD3759DC32C65E8391DF /* Pods */,
+				C5EA7383EFD975ED4C8F4466 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +87,116 @@
 		3DEA1FA626EC3C5C00F5912F /* ceiba */ = {
 			isa = PBXGroup;
 			children = (
+				3DEA1FCE26EC6A4900F5912F /* DataAccess */,
+				3DEA1FC526EC4B5100F5912F /* Common */,
+				3DEA1FBE26EC42A400F5912F /* Resources */,
+				3DEA1FBD26EC429D00F5912F /* ViewModel */,
+				3DEA1FBC26EC429400F5912F /* View */,
+				3DEA1FBB26EC428700F5912F /* Model */,
 				3DEA1FA726EC3C5C00F5912F /* AppDelegate.swift */,
 				3DEA1FA926EC3C5C00F5912F /* SceneDelegate.swift */,
-				3DEA1FAB26EC3C5C00F5912F /* ViewController.swift */,
-				3DEA1FAD26EC3C5C00F5912F /* Main.storyboard */,
-				3DEA1FB026EC3C5D00F5912F /* Assets.xcassets */,
-				3DEA1FB226EC3C5D00F5912F /* LaunchScreen.storyboard */,
-				3DEA1FB526EC3C5D00F5912F /* Info.plist */,
 			);
 			path = ceiba;
+			sourceTree = "<group>";
+		};
+		3DEA1FBB26EC428700F5912F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA1FC126EC486D00F5912F /* User.swift */,
+				3DEA1FCC26EC58A500F5912F /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DEA1FBC26EC429400F5912F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA1FAD26EC3C5C00F5912F /* Main.storyboard */,
+				3DEA1FAB26EC3C5C00F5912F /* ViewController.swift */,
+				3DEA1FB226EC3C5D00F5912F /* LaunchScreen.storyboard */,
+				3DEA1FBF26EC469C00F5912F /* UserTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3DEA1FBD26EC429D00F5912F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA1FC326EC4A7600F5912F /* ViewModel.swift */,
+				3DEA1FCA26EC4D4600F5912F /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3DEA1FBE26EC42A400F5912F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA1FB526EC3C5D00F5912F /* Info.plist */,
+				3DEA1FB026EC3C5D00F5912F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3DEA1FC526EC4B5100F5912F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA1FD626ED08C500F5912F /* Extensions */,
+				3DEA1FC626EC4B7400F5912F /* Constants.swift */,
+				3DEA1FC826EC4BCB00F5912F /* Protocols.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3DEA1FCE26EC6A4900F5912F /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA1FD926ED0C9400F5912F /* Services */,
+				3DEA1FCF26EC6C0D00F5912F /* Configuration */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		3DEA1FCF26EC6C0D00F5912F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA1FD026EC6C1700F5912F /* ServiceProtocol.swift */,
+				3DEA1FD226EC6DC800F5912F /* NetworkError.swift */,
+				3DEA1FD426ECF7C000F5912F /* NetworkProvider.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3DEA1FD626ED08C500F5912F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA1FD726ED08D600F5912F /* Encodable+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3DEA1FD926ED0C9400F5912F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA1FDA26ED0CB300F5912F /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C5EA7383EFD975ED4C8F4466 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1655A13D5DDA87BC3E83E3D5 /* Pods_ceiba.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCE4BD3759DC32C65E8391DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F3BE7C8E7F52D2FBC9C53DF /* Pods-ceiba.debug.xcconfig */,
+				EB06F334892408E7D446EEEE /* Pods-ceiba.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DEA1FB826EC3C5D00F5912F /* Build configuration list for PBXNativeTarget "ceiba" */;
 			buildPhases = (
+				4421635AB3C223BA0FC05CBE /* [CP] Check Pods Manifest.lock */,
 				3DEA1FA026EC3C5C00F5912F /* Sources */,
 				3DEA1FA126EC3C5C00F5912F /* Frameworks */,
 				3DEA1FA226EC3C5C00F5912F /* Resources */,
+				9319F63A4E5D8B7676999AB3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +266,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4421635AB3C223BA0FC05CBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ceiba-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9319F63A4E5D8B7676999AB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ceiba/Pods-ceiba-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ceiba/Pods-ceiba-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ceiba/Pods-ceiba-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3DEA1FA026EC3C5C00F5912F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DEA1FC026EC469C00F5912F /* UserTableViewCell.swift in Sources */,
 				3DEA1FAC26EC3C5C00F5912F /* ViewController.swift in Sources */,
 				3DEA1FA826EC3C5C00F5912F /* AppDelegate.swift in Sources */,
+				3DEA1FC226EC486D00F5912F /* User.swift in Sources */,
+				3DEA1FD526ECF7C000F5912F /* NetworkProvider.swift in Sources */,
+				3DEA1FC726EC4B7400F5912F /* Constants.swift in Sources */,
+				3DEA1FC426EC4A7600F5912F /* ViewModel.swift in Sources */,
+				3DEA1FD826ED08D700F5912F /* Encodable+Extensions.swift in Sources */,
 				3DEA1FAA26EC3C5C00F5912F /* SceneDelegate.swift in Sources */,
+				3DEA1FCB26EC4D4600F5912F /* UserViewModel.swift in Sources */,
+				3DEA1FC926EC4BCB00F5912F /* Protocols.swift in Sources */,
+				3DEA1FDB26ED0CB300F5912F /* UserService.swift in Sources */,
+				3DEA1FD326EC6DC800F5912F /* NetworkError.swift in Sources */,
+				3DEA1FCD26EC58A500F5912F /* Post.swift in Sources */,
+				3DEA1FD126EC6C1700F5912F /* ServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +471,13 @@
 		};
 		3DEA1FB926EC3C5D00F5912F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F3BE7C8E7F52D2FBC9C53DF /* Pods-ceiba.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34E4US38WL;
-				INFOPLIST_FILE = ceiba/Info.plist;
+				INFOPLIST_FILE = ceiba/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +491,13 @@
 		};
 		3DEA1FBA26EC3C5D00F5912F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB06F334892408E7D446EEEE /* Pods-ceiba.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34E4US38WL;
-				INFOPLIST_FILE = ceiba/Info.plist;
+				INFOPLIST_FILE = ceiba/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
