@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class UserViewModel: BaseViewModelProtocol {
+class UserCellViewModel: BaseViewModelProtocol {
     
     struct Output {
         let name: Driver<String>
@@ -43,5 +43,13 @@ class UserViewModel: BaseViewModelProtocol {
             phoneSubject.onNext(user.phone ?? "")
             emailSubject.onNext(user.email ?? "")
         }
+    }
+    
+    func getUserId() -> Int {
+        return user?.id ?? 0
+    }
+    
+    func getName() -> String {
+        return user?.name ?? ""
     }
 }

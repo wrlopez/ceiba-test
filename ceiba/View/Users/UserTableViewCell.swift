@@ -30,7 +30,7 @@ class UserTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configure( with viewModel: UserViewModel, at index: IndexPath ) {
+    func configure( with viewModel: UserCellViewModel, at index: IndexPath ) {
         viewModel.output.name.drive(nameLabel.rx.text).disposed(by: disposeBag)
         viewModel.output.email.drive(emailLabel.rx.text).disposed(by: disposeBag)
         viewModel.output.phone.drive(phoneLabel.rx.text).disposed(by: disposeBag)
